@@ -9,6 +9,8 @@ public class DemoClient {
   }
 
   public String doSomeDemoAction(final String msg) {
+    System.out.printf("############## HERE ################");
+
     return  msg + demoMessage;
   }
 }

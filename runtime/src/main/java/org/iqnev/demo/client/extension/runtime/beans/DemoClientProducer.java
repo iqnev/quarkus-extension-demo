@@ -11,16 +11,16 @@ import org.iqnev.demo.client.extension.runtime.config.DemoClientConfig;
 @ApplicationScoped
 public class DemoClientProducer {
 
-  final DemoClientConfig demoClientConfig;
+  private volatile DemoClient demoClient;
 
-  public DemoClientProducer(DemoClientConfig demoClientConfig) {
-    this.demoClientConfig = demoClientConfig;
+  void initialize(final DemoClient demoClient) {
+    this.demoClient = demoClient;
   }
 
   @Produces
   @Singleton
   @DefaultBean
   public DemoClient createClient() {
-    return new DemoClient(demoClientConfig.demoMessage());
+    return demoClient;
   }
 }
