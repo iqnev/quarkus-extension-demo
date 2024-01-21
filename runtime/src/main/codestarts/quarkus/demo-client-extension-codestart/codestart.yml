@@ -1,0 +1,9 @@
+name: demo-client-extension-codestart
+ref: demo-client-extension
+type: code
+tags: extension-codestart
+metadata:
+  title: Demo Client Extension
+  description: Start coding with Demo Client Extension
+#  path: /some-path
+#  related-guide-section: TBD
