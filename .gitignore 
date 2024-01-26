@@ -9,7 +9,8 @@ release.properties
 .mvn/wrapper/maven-wrapper.jar
 
 ### IntelliJ IDEA ###
-**/.idea/*
+.idea/
+demo-client-extension-parent.iml
 !**/.idea/google-java-format.xml
 !**/.idea/saveactions_settings.xml
 *.iws
